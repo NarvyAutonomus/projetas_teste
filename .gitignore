@@ -1,1 +1,4 @@
-notebooks/processed_data/**
+__pycache__
+**.pyc
+processed_data/**
+raw_data

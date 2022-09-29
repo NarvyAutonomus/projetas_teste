@@ -11,6 +11,7 @@ def init_spark():
         .config("spark.sql.parquet.int96RebaseModeInWrite", "CORRECTED") \
         .config("spark.sql.parquet.datetimeRebaseModeInRead", "CORRECTED")\
         .config("spark.sql.parquet.datetimeRebaseModeInWrite", "CORRECTED")\
+        .config("spark.sql.legacy.parquet.int96RebaseModeInWrite", "CORRECTED")\
         .getOrCreate()
 
     return spark
